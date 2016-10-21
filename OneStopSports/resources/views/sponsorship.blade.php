@@ -7,8 +7,10 @@
         to help spread our name and you get to use our website as a personal game and statistics tracker!! If you wish for
         sponsorship please click the ACCEPT button below!
     </p>
-    <div>
-        <button>Accept</button>
-    </div>
+
+    <form style="text-align: center" action="/register">
+        <input type="submit" value="Accept" />
+    </form>
+
     @stop
 </html>
