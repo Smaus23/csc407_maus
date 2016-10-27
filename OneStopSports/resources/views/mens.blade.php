@@ -6,16 +6,16 @@
     Page is currently under construction
     </p>
 
-    <?php
-    $array= (one_stop_sports_shop, mens_apparel)->toarray;
-    print_r($array)
+    {{--}}
+    <ul>
+        @foreach($men as $man)
+            <li>Apparel: {{$man['Apparel']}}</li>
+        @endforeach
+    </ul>
+    --}}
 
+    <form style="text-align: center" action="/mens2">
+        <input type="submit" value="Check Array" />
+    </form>
 
-
-
-
-
-
-    ?>
     @stop
-</html>

@@ -10,6 +10,20 @@
 | to using a Closure or controller method. Build something great!
 |
 */
+Route::get('/mens2', 'MensApparelController@index');
+Route::get('/womens2', 'WomansApparelController@index');
+Route::get('/children2', 'ChildrenApparelController@index');
+Route::get('/sportsspecific-football2', 'FootballApparelController@index');
+Route::get('/sportsspecific-baseball2', 'BaseballApparelController@index');
+Route::get('/sportsspecific-basketball2', 'BasketballApparelController@index');
+Route::get('/sportsspecific-cheerleading2', 'CheerleadingApparelController@index');
+Route::get('/sportsspecific-soccer2', 'SoccerApparelController@index');
+Route::get('/sportsspecific-softball2', 'SoftballApparelController@index');
+Route::get('/sportsspecific-track2', 'TrackApparelController@index');
+Route::get('/sportsspecific-volleyball2', 'VolleyballApparelController@index');
+
+
+
 
 Route::get('/', function () {
     return view('welcome');

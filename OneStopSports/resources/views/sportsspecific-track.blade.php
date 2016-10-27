@@ -5,5 +5,9 @@
     <p>
         Page is currently under construction
     </p>
+
+    <form style="text-align: center" action="/sportsspecific-track2">
+        <input type="submit" value="Check Array" />
+    </form>
     @stop
     </html>
