@@ -13,8 +13,8 @@ class SoftballApparelController extends Controller
     public function index()
     {
         $softball = SoftballApparel::get()->toArray();
-        dd($softball);
-        //return view('sportsspecific-softball')->with('softball', $softball);
+        //dd($softball);
+        return view('sportsspecific-softball')->with('softball', $softball);
     }
 
     /**

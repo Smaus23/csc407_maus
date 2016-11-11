@@ -13,8 +13,8 @@ class CheerleadingApparelController extends Controller
     public function index()
     {
         $cheer = CheerleadingApparel::get()->toArray();
-        dd($cheer);
-        //return view('sportsspecific-cheerleading')->with('cheer', $cheer);
+        //dd($cheer);
+        return view('sportsspecific-cheerleading')->with('cheerleading', $cheer);
     }
 
     /**

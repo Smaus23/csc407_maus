@@ -14,8 +14,8 @@ class MensApparelController extends Controller
     public function index()
     {
         $mens = MensApparel::get()->toArray();
-        dd($mens);
-        //return view('mens')->with('men', $mens);
+        // dd($mens);
+        return view('mens')->with('mens', $mens);
     }
 
     /**

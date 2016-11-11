@@ -13,8 +13,8 @@ class TrackApparelController extends Controller
     public function index()
     {
         $track = TrackApparel::get()->toArray();
-        dd($track);
-        //return view('sportsspecific-track')->with('track', $track);
+        //dd($track);
+        return view('sportsspecific-track')->with('track', $track);
     }
 
     /**

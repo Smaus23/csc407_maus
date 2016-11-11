@@ -13,8 +13,8 @@ class WomansApparelController extends Controller
     public function index()
     {
         $womens = WomansApparel::get()->toArray();
-        dd($womens);
-        //return view('womens')->with('women', $womens);
+        //dd($womens);
+        return view('womens')->with('women', $womens);
     }
 
     /**

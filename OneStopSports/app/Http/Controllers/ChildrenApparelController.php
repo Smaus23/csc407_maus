@@ -14,8 +14,8 @@ class ChildrenApparelController extends Controller
     public function index()
     {
         $children = ChildrenApparel::get()->toArray();
-        dd($children);
-        //return view('children')->with('children', $children);
+        //dd($children);
+        return view('children')->with('children', $children);
     }
 
     /**

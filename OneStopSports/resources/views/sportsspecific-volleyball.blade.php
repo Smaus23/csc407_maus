@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 @extends('layouts.master')
 @section ('content')
-    <h1>Volleyball</h1>
-    <p>
-        Page is currently under construction
-    </p>
+    <h1 style="text-align:center">Volleyball Apparel</h1>
 
-    <form style="text-align: center" action="/sportsspecific-volleyball2">
-        <input type="submit" value="Check Array" />
-    </form>
+    <ul>
+        <?php
+        foreach($volleyball as $volley)
+        { ?>
+        <li>Apparel: {{$volley['Apparel']['Price']}}</li>
+            <li> {{$tra['Price']}}</li>
+            <form action="/shoppingcart">
+                <input type="submit" value="Add to Cart" />
+            </form>
+            </br>
+        <?php
+        }
+        ?>
+    </ul>
+
     @stop
     </html>

@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -40,12 +39,27 @@
             margin-right: auto;
             padding: 1em;
         }
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 1em;
+            width: 50em;
+            text-align: center;
+        }
+
+        table {
+            margin-left:auto;
+            margin-right:auto;
+        }
+
     </style>
     @include('layouts.menu')
 </head>
 <body>
+
 <div class="content">
-   @yield ('content')
+   @yield('content')
 </div>
 </div>
 </body>

@@ -1,21 +1,21 @@
-<!DOCTYPE html>
 @extends('layouts.master')
+
 @section ('content')
-    <h1>Mens</h1>
-    <p>
-    Page is currently under construction
-    </p>
+    <h1 style="text-align:center">Mens Apparel</h1>
 
-    {{--}}
     <ul>
-        @foreach($men as $man)
+        <?php
+        foreach($mens as $man)
+        { ?>
             <li>Apparel: {{$man['Apparel']}}</li>
-        @endforeach
+            <li> {{$man['Price']}}</li>
+            <form action="/shoppingcart">
+                <input type="submit" value="Add to Cart" />
+            </form>
+            </br>
+            <?php
+        }
+            ?>
     </ul>
-    --}}
-
-    <form style="text-align: center" action="/mens2">
-        <input type="submit" value="Check Array" />
-    </form>
 
     @stop

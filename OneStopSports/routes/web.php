@@ -22,7 +22,17 @@ Route::get('/sportsspecific-softball2', 'SoftballApparelController@index');
 Route::get('/sportsspecific-track2', 'TrackApparelController@index');
 Route::get('/sportsspecific-volleyball2', 'VolleyballApparelController@index');
 
-
+Route::resource('mens', 'MensApparelController');
+Route::resource('womens', 'WomansApparelController');
+Route::resource('children', 'ChildrenApparelController');
+Route::resource('sportsspecific-football', 'FootballApparelController');
+Route::resource('sportsspecific-baseball', 'BaseballApparelController');
+Route::resource('sportsspecific-basketball', 'BasketballApparelController');
+Route::resource('sportsspecific-cheerleading', 'CheerleadingApparelController');
+Route::resource('sportsspecific-soccer', 'SoccerApparelController');
+Route::resource('sportsspecific-track', 'TrackApparelController');
+Route::resource('sportsspecific-softball', 'SoftballApparelController');
+Route::resource('sportsspecific-volleyball', 'VolleyballApparelController');
 
 
 Route::get('/', function () {
@@ -33,54 +43,54 @@ Route::get('/home', function () {
     return view('homepage');
 });
 
-Route::get('/mens', function () {
-    return view('mens');
-});
+//Route::get('/mens', function () {
+//    return view('mens');
+//});
 
-Route::get('/womens', function () {
-    return view('womens');
-});
+//Route::get('/womens', function () {
+ //   return view('womens');
+//});
 
-Route::get('/children', function () {
-    return view('children');
-});
+//Route::get('/children', function () {
+//    return view('children');
+//});
 
 
 Route::get('/sportsspecific', function () {
     return view('sportsspecific');
 });
 
-Route::get('/sportsspecific-football', function () {
-    return view('sportsspecific-football');
-});
+//Route::get('/sportsspecific-football', function () {
+//    return view('sportsspecific-football');
+//});
 
-Route::get('/sportsspecific-baseball', function () {
-    return view('sportsspecific-baseball');
-});
+//Route::get('/sportsspecific-baseball', function () {
+  //  return view('sportsspecific-baseball');
+//});
 
-Route::get('/sportsspecific-basketball', function () {
-    return view('sportsspecific-basketball');
-});
+//Route::get('/sportsspecific-basketball', function () {
+  //  return view('sportsspecific-basketball');
+//});
 
-Route::get('/sportsspecific-cheerleading', function () {
-    return view('sportsspecific-cheerleading');
-});
+//Route::get('/sportsspecific-cheerleading', function () {
+  //  return view('sportsspecific-cheerleading');
+//});
 
-Route::get('/sportsspecific-soccer', function () {
-    return view('sportsspecific-soccer');
-});
+//Route::get('/sportsspecific-soccer', function () {
+  //  return view('sportsspecific-soccer');
+//});
 
-Route::get('/sportsspecific-softball', function () {
-    return view('sportsspecific-softball');
-});
+//Route::get('/sportsspecific-softball', function () {
+  //  return view('sportsspecific-softball');
+//});
 
-Route::get('/sportsspecific-track', function () {
-    return view('sportsspecific-track');
-});
+//Route::get('/sportsspecific-track', function () {
+  //  return view('sportsspecific-track');
+//});
 
-Route::get('/sportsspecific-volleyball', function () {
-    return view('sportsspecific-volleyball');
-});
+//Route::get('/sportsspecific-volleyball', function () {
+  //  return view('sportsspecific-volleyball');
+//});
 
 
 Route::get('/localteams', function () {
@@ -95,6 +105,9 @@ Route::get('/register', function () {
     return view('register');
 });
 
+Route::get('/thanks', function () {
+    return view('thanks');
+});
 
 Route::get('/shoppingcart', function () {
     return view('shoppingcart');

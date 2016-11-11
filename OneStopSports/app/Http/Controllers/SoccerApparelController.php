@@ -13,8 +13,8 @@ class SoccerApparelController extends Controller
     public function index()
     {
         $soccer = SoccerApparel::get()->toArray();
-        dd($soccer);
-        //return view('sportsspecific-soccer')->with('soccer', $soccer);
+        //dd($soccer);
+        return view('sportsspecific-soccer')->with('soccer', $soccer);
     }
 
     /**

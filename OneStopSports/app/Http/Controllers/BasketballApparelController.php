@@ -13,8 +13,8 @@ class BasketballApparelController extends Controller
     public function index()
     {
         $basketball = BasketballApparel::get()->toArray();
-        dd($basketball);
-        //return view('sportsspecific-basketball')->with('basketball', $basketball);
+        //dd($basketball);
+        return view('sportsspecific-basketball')->with('basketball', $basketball);
     }
 
     /**
