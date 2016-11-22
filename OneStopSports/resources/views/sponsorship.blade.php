@@ -8,7 +8,7 @@
         to pre-register please click the ACCEPT button below!
     </p>
 
-    <form style="text-align: center" action="/register">
+    <form style="padding-bottom: 1em;text-align: center" action="/register">
         <input type="submit" value="Accept" />
     </form>
 

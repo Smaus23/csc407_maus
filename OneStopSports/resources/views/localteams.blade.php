@@ -4,7 +4,8 @@
     <h1 style="text-align:center">Local Teams</h1>
  <p style="text-align:center">Hello! Do you want to see your team on our page? Pre-register now on our sponsorship page to be one of the firsts to be added in! </p>
 <h3 style="text-align:center"> Western Pennsylvania Teams </h3>
-       <table>
+
+           <table class="table table-striped table-hover table-bordered">
        <tr>
            <th>School Name</th>
            <th>W-L</th>

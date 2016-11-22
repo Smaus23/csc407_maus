@@ -113,6 +113,10 @@ Route::get('/shoppingcart', function () {
     return view('shoppingcart');
 });
 
+Route::get('/checkout', function () {
+    return view('checkout');
+});
+
 Route::get('/contactus', function () {
     return view('contactus');
 });

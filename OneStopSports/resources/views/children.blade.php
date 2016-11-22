@@ -3,20 +3,30 @@
 @section ('content')
     <h1 style="text-align:center">Childrens Apparel</h1>
 
-    <ul>
-        <?php
-        foreach($children as $child)
-        { ?>
-        <li>Apparel: {{$child['Apparel']}}</li>
-            <li> {{$child['Price']}}</li>
-            <form action="/shoppingcart">
-                <input type="submit" value="Add to Cart" />
-            </form>
-            </br>
+    <table class="table table-striped table-hover table-bordered">
+        <tr>
+            <th>Apparel</th>
+            <th>Cost</th>
+            <th></th>
+        </tr>
+        <ul>
+            <?php
+            foreach($children as $child)
+            { ?>
+            <tr>
+                <td>{{$child['Apparel']}}</td>
+                <td>{{$child['Price']}}</td>
+                <td>
+                    <form action="/shoppingcart">
+                        <input type="submit" value="Add to Cart" />
+                    </form>
+                </td>
+            </tr>
+
         <?php
         }
         ?>
-    </ul>
+    </table>
 
     @stop
 </html>

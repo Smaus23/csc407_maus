@@ -1,16 +1,33 @@
+<!DOCTYPE html>
+<html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>One Stop Sports Shop</title>
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
-    <!-- Styles -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
+        /* Remove the navbar's default rounded borders and increase the bottom margin */
+        .navbar {
+            margin-bottom: 50px;
+            border-radius: 0;
+        }
+
+        /* Remove the jumbotron's default bottom margin */
+        .jumbotron {
+            margin-bottom: 0;
+        }
+
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding-top: 2em;
+        }
+
+
         button{
             margin:auto;
             display:block;
@@ -25,20 +42,10 @@
             font-size: 1.50em;
             letter-spacing: .1rem;
         }
-        a:link {color: black;}
-        a:visited {color: black;}
+        a:link {color: white;}
+        a:visited {color: white;}
         a:hover {color: grey;}
         a:active {color: black;}
-
-        html, body  {
-            border-radius: 25px;
-            border-width: 0.25em;
-            border-style: solid;
-            border-color: black;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 1em;
-        }
 
         table, th, td {
             border: 1px solid black;
@@ -63,4 +70,7 @@
 </div>
 </div>
 </body>
+<footer class="container-fluid text-center">
+    <p>One Stop Sports Shop Inc.</p>
+</footer>
 </html>

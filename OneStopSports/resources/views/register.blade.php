@@ -21,7 +21,7 @@
             <input type='password' name='password' id='password' maxlength="50" />
         </fieldset>
     </form>
-    <form style="text-align: center" action="/thanks">
+    <form style="padding-bottom: 1em; text-align: center;"  action="/thanks">
         <input type="submit" value="Submit" />
     </form>
     @stop
