@@ -15,7 +15,7 @@
                     <li class="active"><a href="/home">Home</a></li>
                     <li class="active"><a href="/mens">Mens</a></li>
                     <li class="active"><a href="/womens">Womens</a></li>
-                    <li class="active"><a href="/children">Children</a></li>
+                    <li class="active"><a href="/children">Childrens</a></li>
                     <li class="active"><a href="/sportsspecific">Sports Specific</a></li>
                     <li class="active"><a href="/localteams">Local Team</a></li>
                     <li class="active"><a href="/sponsorship">Sponsorship</a></li>
