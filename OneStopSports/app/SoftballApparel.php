@@ -28,4 +28,13 @@ class SoftballApparel extends Model
     {
         return $this->belongsTo('App\Item');
     }
+
+    public function addToCart($id)
+    {
+        $item = SoftballApparel::where('itemID', $id)->first()->toArray();
+
+        Cart::add($item['ItemID'], $item['Apparel'], 1, $item['Price']);
+
+        return redirect('/shoppingcart');
+    }
 }

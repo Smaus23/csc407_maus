@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 @extends('layouts.master')
 @section ('content')
     <center><img src="img/OneStopBuilding.jpg" alt="One Stop Sports Shop Building" style="width:300px;height:170px; align-content: center; padding-bottom: 1em; " ></center>
@@ -16,5 +16,5 @@
     Twitter: @onestopsports
     </p>
         @stop
-</html>
+
 

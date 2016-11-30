@@ -10,28 +10,38 @@
 | to using a Closure or controller method. Build something great!
 |
 */
-Route::get('/mens2', 'MensApparelController@index');
-Route::get('/womens2', 'WomansApparelController@index');
-Route::get('/children2', 'ChildrenApparelController@index');
-Route::get('/sportsspecific-football2', 'FootballApparelController@index');
-Route::get('/sportsspecific-baseball2', 'BaseballApparelController@index');
-Route::get('/sportsspecific-basketball2', 'BasketballApparelController@index');
-Route::get('/sportsspecific-cheerleading2', 'CheerleadingApparelController@index');
-Route::get('/sportsspecific-soccer2', 'SoccerApparelController@index');
-Route::get('/sportsspecific-softball2', 'SoftballApparelController@index');
-Route::get('/sportsspecific-track2', 'TrackApparelController@index');
-Route::get('/sportsspecific-volleyball2', 'VolleyballApparelController@index');
 
+Route::get('/mens/addtocart/{id}', 'MensApparelController@addToCart');
 Route::resource('mens', 'MensApparelController');
+
+Route::get('/womens/addtocart/{id}', 'WomansApparelController@addToCart');
 Route::resource('womens', 'WomansApparelController');
+
+Route::get('/children/addtocart/{id}', 'ChildrenApparelController@addToCart');
 Route::resource('children', 'ChildrenApparelController');
+
+Route::get('/sportsspecific-football/addtocart/{id}', 'FootballApparelController@addToCart');
 Route::resource('sportsspecific-football', 'FootballApparelController');
+
+Route::get('/sportsspecific-baseball/addtocart/{id}', 'BaseballApparelController@addToCart');
 Route::resource('sportsspecific-baseball', 'BaseballApparelController');
+
+Route::get('/sportsspecific-basketball/addtocart/{id}', 'BasketballApparelController@addToCart');
 Route::resource('sportsspecific-basketball', 'BasketballApparelController');
+
+Route::get('/sportsspecific-cheerleading/addtocart/{id}', 'CheerleadingApparelController@addToCart');
 Route::resource('sportsspecific-cheerleading', 'CheerleadingApparelController');
+
+Route::get('/sportsspecific-soccer/addtocart/{id}', 'SoccerApparelController@addToCart');
 Route::resource('sportsspecific-soccer', 'SoccerApparelController');
+
+Route::get('/sportsspecific-track/addtocart/{id}', 'TrackApparelController@addToCart');
 Route::resource('sportsspecific-track', 'TrackApparelController');
+
+Route::get('/sportsspecific-softball/addtocart/{id}', 'SoftballApparelController@addToCart');
 Route::resource('sportsspecific-softball', 'SoftballApparelController');
+
+Route::get('/sportsspecific-volleyball/addtocart/{id}', 'VolleyballApparelController@addToCart');
 Route::resource('sportsspecific-volleyball', 'VolleyballApparelController');
 
 
@@ -43,55 +53,9 @@ Route::get('/home', function () {
     return view('homepage');
 });
 
-//Route::get('/mens', function () {
-//    return view('mens');
-//});
-
-//Route::get('/womens', function () {
- //   return view('womens');
-//});
-
-//Route::get('/children', function () {
-//    return view('children');
-//});
-
-
 Route::get('/sportsspecific', function () {
     return view('sportsspecific');
 });
-
-//Route::get('/sportsspecific-football', function () {
-//    return view('sportsspecific-football');
-//});
-
-//Route::get('/sportsspecific-baseball', function () {
-  //  return view('sportsspecific-baseball');
-//});
-
-//Route::get('/sportsspecific-basketball', function () {
-  //  return view('sportsspecific-basketball');
-//});
-
-//Route::get('/sportsspecific-cheerleading', function () {
-  //  return view('sportsspecific-cheerleading');
-//});
-
-//Route::get('/sportsspecific-soccer', function () {
-  //  return view('sportsspecific-soccer');
-//});
-
-//Route::get('/sportsspecific-softball', function () {
-  //  return view('sportsspecific-softball');
-//});
-
-//Route::get('/sportsspecific-track', function () {
-  //  return view('sportsspecific-track');
-//});
-
-//Route::get('/sportsspecific-volleyball', function () {
-  //  return view('sportsspecific-volleyball');
-//});
-
 
 Route::get('/localteams', function () {
     return view('localteams');

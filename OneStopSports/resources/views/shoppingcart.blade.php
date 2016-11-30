@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 @extends('layouts.master')
 @section ('content')
     <h1 style="text-align:center">Shopping Cart</h1><hr>
@@ -10,37 +10,33 @@
             <th>Unit Price</th>
             <th>Total Price</th>
         </tr>
+        @foreach(Cart::content() as $row)
+
+            <tr>
+                <td>{{ $row->name }}</td>
+                <td>{{ $row->qty }}</td>
+                <td>{{ $row->price }}</td>
+                <td>{{ $row->total }}</td>
+            </tr>
+        @endforeach
         <tr>
-            <td>Football Jersey</td>
-            <td>1 <a href="#"></a></td>
-            <td>$15.50</td>
-            <td>$15.50</td>
-        </tr>
-        <tr>
-            <td>Football Shorts</td>
-            <td>1 <a href="#"></a></td>
-            <td>$7.50</td>
-            <td>$7.50</td>
-        </tr>
-        <tr>
-            <td>Mens Shirt</td>
-            <td>1 <a href="#"></a></td>
-            <td>$10.50</td>
-            <td>$10.50</td>
+            <th>Mens Shirt</th>
+            <th>1</th>
+            <th>$10.50</th>
+            <th>$10.50</th>
         </tr>
         <tr>
             <th colspan="3"><span class="pull-right">Sub Total</span></th>
-            <th>$33.50</th>
+            <th>$10.50</th>
         </tr>
         <tr>
             <th colspan="3"><span class="pull-right">Tax</span></th>
-            <th>$6.50</th>
+            <th>$2.50</th>
         </tr>
         <tr>
             <th colspan="3"><span class="pull-right">Total</span></th>
-            <th>$40.00</th>
+            <th>$13.00</th>
         </tr>
-        <tr>
             <td><a href="/home" class="btn btn-primary">Continue Shopping</a></td>
             <td colspan="3"><a href="/checkout" class="pull-right btn btn-success">Checkout</a></td>
         </tr>
@@ -49,4 +45,3 @@
 
     </div>
     @stop
-</html>

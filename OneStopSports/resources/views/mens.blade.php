@@ -1,3 +1,4 @@
+
 @extends('layouts.master')
 
 @section ('content')
@@ -17,12 +18,11 @@
                     <td>{{$man['Apparel']}}</td>
                     <td>{{$man['Price']}}</td>
                     <td>
-                        <form action="/shoppingcart">
+                        <form action="/shoppingcart"> {{--/mens/addtocart/{{$man['ItemID']}}--}}
                             <input type="submit" value="Add to Cart" />
                         </form>
                     </td>
                 </tr>
-
             <?php
         }
             ?>

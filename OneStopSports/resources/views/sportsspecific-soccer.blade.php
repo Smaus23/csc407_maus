@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 @extends('layouts.master')
 @section ('content')
     <h1 style="text-align:center">Soccer Apparel</h1>
@@ -28,4 +28,4 @@
     </table>
 
     @stop
-    </html>
+

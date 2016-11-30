@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 @extends('layouts.master')
 @section ('content')
     <h1 style="text-align:center">Local Teams</h1>
@@ -72,4 +71,4 @@
     </tr>
        </table>
     @stop
-</html>
+

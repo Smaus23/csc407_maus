@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 @extends('layouts.master')
 @section ('content')
     <form id='register' action='/thanks' method='post' accept-charset='UTF-8' style="text-align:center">
@@ -25,4 +24,3 @@
         <input type="submit" value="Submit" />
     </form>
     @stop
-    </html>
