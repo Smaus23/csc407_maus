@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\ChildrenApparel;
 use Illuminate\Http\Request;
-
+use Gloudemans\Shoppingcart\Facades\Cart;
 use App\Http\Requests;
 
 class ChildrenApparelController extends Controller
@@ -82,5 +82,14 @@ class ChildrenApparelController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function addToCart($id)
+    {
+        $item = ChildrenApparel::where('itemID', $id)->first()->toArray();
+
+        Cart::add($item['ItemID'], $item['Apparel'], 1, $item['Price']);
+
+        return redirect('/shoppingcart');
     }
 }

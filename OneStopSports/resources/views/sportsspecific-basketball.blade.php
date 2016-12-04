@@ -16,7 +16,7 @@
                 <td>{{$basket['Apparel']}}</td>
                 <td>{{$basket['Price']}}</td>
                 <td>
-                    <form action="/shoppingcart">
+                    <form action="/sportsspecific-basketball/addtocart/{{$basket['ItemID']}}">
                         <input type="submit" value="Add to Cart" />
                     </form>
                 </td>

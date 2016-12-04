@@ -16,7 +16,7 @@
                 <td>{{$volley['Apparel']}}</td>
                 <td>{{$volley['Price']}}</td>
                 <td>
-                    <form action="/shoppingcart">
+                    <form action="/sportsspecific-volleyball/addtocart/{{$volley['ItemID']}}">
                         <input type="submit" value="Add to Cart" />
                     </form>
                 </td>

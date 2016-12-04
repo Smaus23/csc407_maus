@@ -16,7 +16,7 @@
                 <td>{{$cheer['Apparel']}}</td>
                 <td>{{$cheer['Price']}}</td>
                 <td>
-                    <form action="/shoppingcart">
+                    <form action="/sportsspecific-cheerleading/addtocart/{{$cheer['ItemID']}}">
                         <input type="submit" value="Add to Cart" />
                     </form>
                 </td>

@@ -31,48 +31,4 @@ class MensApparel extends Model
         return $this->belongsTo('App\Item');
     }
 
-    public function addToCart($id)
-    {
-        $item = MensApparel::where('itemID', $id)->first()->toArray();
-
-        Cart::add($item['ItemID'], $item['Apparel'], 1, $item['Price']);
-
-        return redirect('/shoppingcart');
-    }
-
-    public function updateCart($id)
-    {
-        $row = MensApparel::where('itemID', $id)->first()->toArray();
-
-        Cart::update($row, 2);
-
-        return redirect('/shoppingcart');
-    }
-
-    public function subtotal($id)
-    {
-        $item = MensApparel::where('itemID', $id)->first()->toArray();
-
-        Cart::subtotal($item);
-
-        return redirect('/shoppingcart');
-    }
-
-    public function tax($id)
-    {
-        $item = MensApparel::where('itemID', $id)->first()->toArray();
-
-        Cart::tax($item);
-
-        return redirect('/shoppingcart');
-    }
-
-    public function total($id)
-    {
-        $item = MensApparel::where('itemID', $id)->first()->toArray();
-
-        Cart::total($item);
-
-        return redirect('/shoppingcart');
-    }
 }

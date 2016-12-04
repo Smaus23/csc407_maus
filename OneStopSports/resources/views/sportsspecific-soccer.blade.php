@@ -16,7 +16,7 @@
                 <td>{{$socc['Apparel']}}</td>
                 <td>{{$socc['Price']}}</td>
                 <td>
-                    <form action="/shoppingcart">
+                    <form action="/sportsspecific-soccer/addtocart/{{$socc['ItemID']}}">
                         <input type="submit" value="Add to Cart" />
                     </form>
                 </td>

@@ -16,7 +16,7 @@
                 <td>{{$soft['Apparel']}}</td>
                 <td>{{$soft['Price']}}</td>
                 <td>
-                    <form action="/shoppingcart">
+                    <form action="/sportsspecific-softball/addtocart/{{$soft['ItemID']}}">
                         <input type="submit" value="Add to Cart" />
                     </form>
                 </td>

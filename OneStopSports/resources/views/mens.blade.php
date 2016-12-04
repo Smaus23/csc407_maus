@@ -18,7 +18,7 @@
                     <td>{{$man['Apparel']}}</td>
                     <td>{{$man['Price']}}</td>
                     <td>
-                        <form action="/shoppingcart"> {{--/mens/addtocart/{{$man['ItemID']}}--}}
+                        <form action="/mens/addtocart/{{$man['ItemID']}}">
                             <input type="submit" value="Add to Cart" />
                         </form>
                     </td>

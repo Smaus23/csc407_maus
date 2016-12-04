@@ -3,7 +3,7 @@ namespace App\Http\Controllers;
 
 use App\SoccerApparel;
 use Illuminate\Http\Request;
-
+use Gloudemans\Shoppingcart\Facades\Cart;
 use App\Http\Requests;
 
 class SoccerApparelController extends Controller
@@ -81,5 +81,14 @@ class SoccerApparelController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function addToCart($id)
+    {
+        $item = SoccerApparel::where('itemID', $id)->first()->toArray();
+
+        Cart::add($item['ItemID'], $item['Apparel'], 1, $item['Price']);
+
+        return redirect('/shoppingcart');
     }
 }

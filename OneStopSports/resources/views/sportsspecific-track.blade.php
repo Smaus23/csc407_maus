@@ -16,7 +16,7 @@
                 <td>{{$tra['Apparel']}}</td>
                 <td>{{$tra['Price']}}</td>
                 <td>
-                    <form action="/shoppingcart">
+                    <form action="/sportsspecific-track/addtocart/{{$tra['ItemID']}}">
                         <input type="submit" value="Add to Cart" />
                     </form>
                 </td>

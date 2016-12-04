@@ -30,12 +30,5 @@ class WomansApparel extends Model
         return $this->belongsTo('App\Item');
     }
 
-    public function addToCart($id)
-    {
-        $item = WomansApparel::where('itemID', $id)->first()->toArray();
 
-        Cart::add($item['ItemID'], $item['Apparel'], 1, $item['Price']);
-
-        return redirect('/shoppingcart');
-    }
 }

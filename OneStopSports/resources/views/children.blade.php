@@ -17,7 +17,7 @@
                 <td>{{$child['Apparel']}}</td>
                 <td>{{$child['Price']}}</td>
                 <td>
-                    <form action="/shoppingcart">
+                    <form action="/children/addtocart/{{$child['ItemID']}}">
                         <input type="submit" value="Add to Cart" />
                     </form>
                 </td>

@@ -20,22 +20,16 @@
             </tr>
         @endforeach
         <tr>
-            <th>Mens Shirt</th>
-            <th>1</th>
-            <th>$10.50</th>
-            <th>$10.50</th>
-        </tr>
-        <tr>
             <th colspan="3"><span class="pull-right">Sub Total</span></th>
-            <th>$10.50</th>
+            <th>$0.00</th>
         </tr>
         <tr>
             <th colspan="3"><span class="pull-right">Tax</span></th>
-            <th>$2.50</th>
+            <th>$0.00</th>
         </tr>
         <tr>
             <th colspan="3"><span class="pull-right">Total</span></th>
-            <th>$13.00</th>
+            <th>$0.00</th>
         </tr>
             <td><a href="/home" class="btn btn-primary">Continue Shopping</a></td>
             <td colspan="3"><a href="/checkout" class="pull-right btn btn-success">Checkout</a></td>

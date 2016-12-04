@@ -29,12 +29,5 @@ class CheerleadingApparel extends Model
         return $this->belongsTo('App\Item');
     }
 
-    public function addToCart($id)
-    {
-        $item = CheerleadingApparel::where('itemID', $id)->first()->toArray();
 
-        Cart::add($item['ItemID'], $item['Apparel'], 1, $item['Price']);
-
-        return redirect('/shoppingcart');
-    }
 }
